@@ -1,31 +1,4 @@
-[filter_local]
-#YouTuBe去底部广告
-host-suffix, ehg-youtube.hitbox.com, reject
-#爱奇艺去广告
-host,notice.ppstream.com,reject
-host,api.cupid.iqiyi.com,reject
-host,t7z.cupid.iqiyi.com,reject
-host,list3.ppstream.com.iqiyi.com,reject
-#腾讯视频去广告
-host, dp3.qq.com, reject
-host, iacc.qq.com, reject
-host, livep.l.qq.com, reject
-host, vr.gdt.qq.com, reject
-host, vv.video.qq.com, reject
-host, btrace.video.qq.com, reject
-host, mtrace.qq.com, reject
-host, btrace.qq.com, reject
-;user-agent, ?abc*, proxy
-;host, www.google.com, proxy
-;host-keyword, adsite, reject
-;host-suffix, googleapis.com, proxy
-ip-cidr, 10.0.0.0/8, direct
-ip-cidr, 127.0.0.0/8, direct
-ip-cidr, 172.16.0.0/12, direct
-ip-cidr, 192.168.0.0/16, direct
-ip-cidr, 224.0.0.0/24, direct
-geoip, cn, direct
-final, proxy
+
 [rewrite_local]
 ^https?:\/\/.+\.googlevideo\.com\/.+&oad url reject-img
 ^https?:\/\/.+\.googlevideo\.com\/.+ctier url reject-img
